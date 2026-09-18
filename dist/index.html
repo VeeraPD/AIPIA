@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ChangeWatch watches public webpages for the changes you care about and alerts you when they happen.">
+  <title>ChangeWatch — Stop checking. Start watching.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Cpath d='M16 34l9 9 23-23' fill='none' stroke='white' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app">
+    <header class="site-header" data-shell="public">
+      <a class="brand" href="#/" aria-label="ChangeWatch home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span>
+        <span>ChangeWatch</span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a class="button button-ghost button-small" href="#/dashboard">View demo dashboard</a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+
+    <footer class="site-footer" data-shell="public">
+      <div><a class="brand footer-brand" href="#/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span><span>ChangeWatch</span></a><p>Watch what matters. Skip the refresh loop.</p></div>
+      <div class="footer-links"><a href="#/states">Demo states</a><a href="#/email">Sample alert</a><a href="#privacy">Privacy</a></div>
+      <p class="footer-note">MVP demonstration · Public webpages only · No live monitoring</p>
+    </footer>
+  </div>
+
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <div id="modal-root"></div>
+  <script src="app.js"></script>
+</body>
+</html>
